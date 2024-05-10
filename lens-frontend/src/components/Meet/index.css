@@ -1,0 +1,62 @@
+@keyframes text-gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.meetBox > div:nth-child(1){
+    width: 15%;
+}
+
+.meetBox > div:nth-child(2){
+    width: 35%;
+}
+
+.meetBox > div:nth-child(3){
+    width: 30%;
+}
+
+.animated-text-gradient {
+    background: linear-gradient(to right, blue, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;  
+    background-size: 300% 100%;
+    animation: text-gradient-animation 2s linear infinite; 
+}
+
+.videoBox{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+@media only screen and (max-width: 900px) and (min-width:600px)  {
+    .meetBox > div:nth-child(1){
+        display: none;
+    }
+    .meetBox > div:nth-child(2){
+        width: 65%;
+    }
+    
+    .meetBox > div:nth-child(3){
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width:300px)  {
+    .meetBox > div:nth-child(1){
+        display: none;
+    }
+    .meetBox > div:nth-child(2){
+        width: 95%;
+    }
+    
+    .meetBox > div:nth-child(3){
+        display: none;
+    }
+}
+
