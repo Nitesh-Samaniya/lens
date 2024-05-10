@@ -1,0 +1,92 @@
+@media (max-width: 590px) {
+  .responsive-width {
+    width: 80%;
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+  .responsive-width:hover {
+    width: 85%;
+  }
+  .responsive-width > div{
+    width: 100%;
+    text-align: center;
+  }
+  .aboutHeading{
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .aboutPara{
+    font-size: 1rem;
+  }
+ .aboutBtn{
+  display: inline-block;
+ }
+}
+@media (min-width: 600px) {
+  .responsive-width {
+    width: 85%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .responsive-width:hover {
+    width: 90%;
+  }
+  .responsive-width > div{
+    width: 100%;
+  }
+  .aboutHeading{
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .aboutPara{
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+    .responsive-width {
+      width: 85%;
+      flex-direction: row;
+      gap: 10%;
+    }
+    .responsive-width:hover {
+      width: 90%;
+    }
+
+    .responsive-width >div:nth-child(1){
+      width: 50%;
+    }
+
+    .responsive-width >div:nth-child(2){
+      width: 60%;
+    }
+    
+    .aboutHeading{
+      font-size: 2rem;
+    }
+    .aboutPara{
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .responsive-width {
+      width: 80%;
+    }
+    .responsive-width:hover {
+      width: 85%;
+    }
+    .responsive-width >div:nth-child(1){
+      width: 50%;
+    }
+
+    .responsive-width >div:nth-child(2){
+      width: 40%;
+    }
+    .aboutHeading{
+      font-size: 2.5rem;
+    }
+    .aboutPara{
+      font-size: 1.15rem;
+    }
+  }
+  
