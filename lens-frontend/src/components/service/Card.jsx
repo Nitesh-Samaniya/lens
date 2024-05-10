@@ -45,7 +45,7 @@ const Card = ({number, color, title, text}) => {
 
   return (
       <div 
-        class='p-8 group shadow-xl' 
+        className='p-8 group shadow-xl' 
         style={{ border: `1px solid ${borderColor}`, backgroundColor}}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -59,7 +59,7 @@ const Card = ({number, color, title, text}) => {
                 {title}
               </div>
           </div>
-          <div class='mt-6 text-gray-400 text-lg font-bold'>{text}</div>
+          <div className='mt-6 text-gray-400 text-lg font-bold'>{text}</div>
       </div>
   )
 }

@@ -5,16 +5,16 @@ import './index.css';
 
 const Meet = () => {
   return (
-    <div class='flex justify-between items-center bg-[#272e5c] mt-20 mb-20 pt-16 pb-16 meetBox' style={{clipPath: 'polygon(0 20%, 100% 0, 100% 100%, 0 100%)'}}>
-        <div class='ml-10'>
+    <div className='flex justify-between items-center bg-[#272e5c] mt-20 mb-20 pt-16 pb-16 meetBox' style={{clipPath: 'polygon(0 20%, 100% 0, 100% 100%, 0 100%)'}}>
+        <div className='ml-10'>
             <Image src={MeetCom} alt='compImg'/>
         </div>
-        <div class='text-center text-white'>
-            <p class='text-3xl font-bold'>Meet <span class="text-blue-500 animated-text-gradient">Tru-AI</span></p>
-            <p class='text-1xl mt-5'>Design. Create. Deploy.</p>
-            <p class='text-1xl font-bold mt-3'>___ <span class="text-blue-500 animated-text-gradient">the Future of AI | Power to EDIT</span></p>
-            <p class='font-semibold mt-2'>Based On Your Website & Traffic Trends, Tru-AI Optimises Your Website</p>
-            <button class='mt-4 font-medium border border-2 border-slate-400 text-white px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:px-12 transition-all duration-300'>
+        <div className='text-center text-white'>
+            <p className='text-3xl font-bold'>Meet <span className="text-blue-500 animated-text-gradient">Tru-AI</span></p>
+            <p className='text-1xl mt-5'>Design. Create. Deploy.</p>
+            <p className='text-1xl font-bold mt-3'>___ <span className="text-blue-500 animated-text-gradient">the Future of AI | Power to EDIT</span></p>
+            <p className='font-semibold mt-2'>Based On Your Website & Traffic Trends, Tru-AI Optimises Your Website</p>
+            <button className='mt-4 font-medium border border-2 border-slate-400 text-white px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:px-12 transition-all duration-300'>
               Learn More
             </button>
         </div>
@@ -24,7 +24,7 @@ const Meet = () => {
             autoPlay
             loop
             muted
-            class="w-full max-w-lg videoBox"
+            className="w-full max-w-lg videoBox"
           >
             Your browser does not support the video tag.
           </video>

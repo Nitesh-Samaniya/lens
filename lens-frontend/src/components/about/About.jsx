@@ -6,8 +6,8 @@ import './index.css'
 
 const About = () => {
     return (
-        <div class='font-poppins'>
-            <div class='mt-20 text-6xl flex flex-col items-center'>
+        <div className='font-poppins'>
+            <div className='mt-20 text-6xl flex flex-col items-center'>
                 <div>About Us</div>
                 <div style={{
                     width: '165px',
@@ -18,23 +18,23 @@ const About = () => {
                 </div>
             </div>
 
-            <div class='m-auto flex mt-20 mb-20 bg-[#e2f2ff] p-20 ease-in duration-300 group responsive-width'>
-                <div class='py-10'>
-                    <p class='font-medium aboutHeading'>Welcome To LENS</p>
-                    <p class='text-gray-500 leading-snug mt-10 aboutPara'>
+            <div className='m-auto flex mt-20 mb-20 bg-[#e2f2ff] p-20 ease-in duration-300 group responsive-width'>
+                <div className='py-10'>
+                    <p className='font-medium aboutHeading'>Welcome To LENS</p>
+                    <p className='text-gray-500 leading-snug mt-10 aboutPara'>
                         We put our hearts, souls and sweat into designing and developing custom AI - powered solutions for your business so you don't have to.
                     </p>
-                    <p class='mt-6 aboutBtn'>
-                        <button class='group flex items-center gap-2 border-solid border border-black px-10 py-3 font-semibold rounded-lg hover:bg-black hover:text-white'>
+                    <p className='mt-6 aboutBtn'>
+                        <button className='group flex items-center gap-2 border-solid border border-black px-10 py-3 font-semibold rounded-lg hover:bg-black hover:text-white'>
                             Learn More
-                            <span class='hidden group-hover:flex items-center'>
+                            <span className='hidden group-hover:flex items-center'>
                                 <FaArrowRight color='white' />
                             </span>
                         </button>
                     </p>
                 </div>
                 
-                <div class='border-solid border-8 border-white group-hover:border-transparent ease-in duration-300'>
+                <div className='border-solid border-8 border-white group-hover:border-transparent ease-in duration-300'>
                     <Image src={AboutImg} alt='aboutlatest'/>
                 </div>
             </div>

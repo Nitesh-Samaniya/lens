@@ -26,8 +26,8 @@ const cardsData = [
 
 const Service = () => {
   return (
-      <div class='font-poppins bg-[#fcfbf7] w-[90%] m-auto text-center'>
-          <div class='mt-20 text-3xl flex flex-col items-center'>
+      <div className='font-poppins bg-[#fcfbf7] w-[90%] m-auto text-center'>
+          <div className='mt-20 text-3xl flex flex-col items-center'>
               <div>Services</div>
               <div style={{
                   width: '85px',
@@ -38,9 +38,9 @@ const Service = () => {
               </div>
           </div>
 
-          <div class='mt-10 text-4xl sm:text-6xl md:text-5xl leading-snug'>We provide Artificial Intelligence Services</div>
+          <div className='mt-10 text-4xl sm:text-6xl md:text-5xl leading-snug'>We provide Artificial Intelligence Services</div>
 
-        <div class='mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:w-[60%] lg:w-[80%] xl:w-[70%] m-auto'>
+        <div className='mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:w-[60%] lg:w-[80%] xl:w-[70%] m-auto'>
             {
                 cardsData.map((el, index)=><Card key={index} number={index} color={el.color} title={el.title} text={el.text}/>)
             }
