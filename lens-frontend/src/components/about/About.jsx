@@ -18,7 +18,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='m-auto flex mt-20 mb-20 bg-[#e2f2ff] p-20 ease-in duration-300 group responsive-width'>
+            <div class='m-auto flex mt-20 mb-20 bg-[#e2f2ff] p-20 ease-in duration-300 group responsive-width'>
                 <div class='py-10'>
                     <p class='font-medium aboutHeading'>Welcome To LENS</p>
                     <p class='text-gray-500 leading-snug mt-10 aboutPara'>
