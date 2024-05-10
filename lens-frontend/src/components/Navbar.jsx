@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-white font-poppins">
+    <nav className="w-full h-24 shadow-xl bg-white font-poppins">
       <div className="flex justify-between items-center h-full w-full px-6 sm:px-18 md:px-16">
         <Image
           src={Logo}
@@ -42,8 +42,8 @@ const Navbar = () => {
       <div
         className={
           drawerOpen
-            ? "fixed right-0 top-24 w-[65%] sm:hidden bg-[black] h-screen p-4 ease-in duration-500"
-            : "fixed left-[-100%] top-24 p-10 ease-in-out duration-500"
+            ? "fixed z-50 right-0 top-24 w-[65%] sm:hidden bg-[black] h-screen p-4 ease-in duration-500"
+            : "fixed z-50 left-[-100%] top-24 p-10 ease-in-out duration-500"
         }
       >
         <ul className="flex flex-col gap-6 text-xl">
