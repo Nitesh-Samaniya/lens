@@ -56,7 +56,7 @@ const Blogs = () => {
             }
         </div>
 
-        <div className='mt-10 aboutBtn group flex justify-center'>
+        <div className='mt-10 group flex justify-center'>
             <button className='group flex items-center gap-2 border-solid border border-black px-10 py-3 font-semibold rounded-lg hover:bg-black hover:text-white'>
                 Explore More
                 <span className='hidden group-hover:flex items-center'>
