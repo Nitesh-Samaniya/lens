@@ -7,6 +7,7 @@ import Meet from "@/components/Meet/Meet";
 import Why from "@/components/why/Why";
 import KnowUs from "@/components/KnowUs";
 import Footer from "@/components/Footer";
+import Blogs from "@/components/blogs/Blogs";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Service />
       <Meet />
       <Why />
+      <Blogs />
       <KnowUs />
       <Footer />
     </>
