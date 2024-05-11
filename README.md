@@ -21,6 +21,7 @@ LENS provide state-of-the-art AI solutions developed in-house with the help of p
 - Fullscreen mode
 - Cross platform
 - Animation in Cards
+- Theme Enabled
 
 ## Run Locally
 
