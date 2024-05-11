@@ -5,16 +5,21 @@ import Logo from "../../public/nav_logo.webp";
 import Image from "next/image";
 import { IoMdMoon } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md";
+import { IoSunnyOutline } from "react-icons/io5";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
-
+  const {isDark, changeTheme} = React.useContext(ThemeContext)
   const handleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full h-24 shadow-xl bg-white font-poppins">
+    <nav 
+      className="fixed top-0 left-0 z-50 w-full h-24 shadow-xl bg-white font-poppins"
+      style={{backgroundColor: isDark ? '#31363F' : 'white', color: isDark ? 'white' : 'black'}}
+    >
       <div className="flex justify-between items-center h-full w-full px-6 sm:px-18 md:px-16">
         <Image
           src={Logo}
@@ -30,7 +35,9 @@ const Navbar = () => {
             <li className="hover:font-semibold ml-10">Company</li>
             <li className="hover:font-semibold ml-10">Blogs</li>
             <li className="hover:font-semibold ml-10">
-              <IoMdMoon size={25} />
+              {
+                isDark ? <IoSunnyOutline onClick={changeTheme} color="yellow" size={25}/> : <IoMdMoon onClick={changeTheme} size={25} />
+              }
             </li>
           </ul>
         </div>
@@ -52,7 +59,10 @@ const Navbar = () => {
           <li className="text-white hover:font-semibold">Company</li>
           <li className="text-white hover:font-semibold">Blogs</li>
           <li className="text-white hover:font-semibold">
-            <IoMdMoon size={25} />
+            {/* <IoMdMoon size={25} /> */}
+            {
+                isDark ? <IoSunnyOutline onClick={changeTheme} color="yellow" size={25}/> : <IoMdMoon onClick={changeTheme} size={25} />
+              }
           </li>
         </ul>
       </div>

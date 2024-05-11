@@ -1,6 +1,7 @@
 import React from 'react'
 import BlogCard from './BlogCard'
 import { FaArrowRight } from "react-icons/fa";
+import Button from '../Button';
 
 const card1Section = [
     {
@@ -57,12 +58,13 @@ const Blogs = () => {
         </div>
 
         <div className='mt-10 group flex justify-center'>
-            <button className='group flex items-center gap-2 border-solid border border-black px-10 py-3 font-semibold rounded-lg hover:bg-black hover:text-white'>
+            {/* <button className='group flex items-center gap-2 border-solid border border-black px-10 py-3 font-semibold rounded-lg hover:bg-black hover:text-white'>
                 Explore More
                 <span className='hidden group-hover:flex items-center'>
                     <FaArrowRight color='white' />
                 </span>
-            </button>
+            </button> */}
+            <Button text={'Explore More'}/>
         </div>
     </div>
   )

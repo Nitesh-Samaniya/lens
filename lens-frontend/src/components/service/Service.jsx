@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
 import Card from './Card'
+import { ThemeContext } from '@/context/ThemeContext'
 
 const cardsData = [
     {
@@ -25,8 +28,12 @@ const cardsData = [
 ]
 
 const Service = () => {
+  const {isDark, changeTheme} = React.useContext(ThemeContext)
+
   return (
-      <div className='font-poppins bg-[#fcfbf7] w-[90%] m-auto text-center'>
+      <div className='font-poppins bg-[#fcfbf7] w-[90%] m-auto text-center p-0 sm:p-10'
+        style={{backgroundColor: isDark ? '#1b1c1e' : '#fcfbf7', color: isDark ? 'white' : 'black'}}
+      >
           <div className='mt-20 text-3xl flex flex-col items-center'>
               <div>Services</div>
               <div style={{
@@ -38,7 +45,7 @@ const Service = () => {
               </div>
           </div>
 
-          <div className='mt-10 text-4xl sm:text-6xl md:text-5xl leading-snug'>We provide Artificial Intelligence Services</div>
+          <div className='mt-10 text-3xl sm:text-6xl md:text-5xl leading-snug'>We provide Artificial Intelligence Services</div>
 
         <div className='mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:w-[60%] lg:w-[80%] xl:w-[70%] m-auto'>
             {

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { FaCheck } from "react-icons/fa";
 import Right from '../../../public/whyRight.webp'
@@ -5,6 +6,7 @@ import Research from '../../../public/whyResearch.webp'
 import Play from '../../../public/whyPlay.webp'
 import Support from '../../../public/whySupport.webp'
 import WhyCards from './WhyCards';
+import { ThemeContext } from '@/context/ThemeContext';
 
 
 const check1Box = [
@@ -49,8 +51,13 @@ const cardsData = [
 ]
 
 const Why = () => {
+  const {isDark, changeTheme} = React.useContext(ThemeContext)
+
   return (
-    <div className='font-poppins bg-[#fcfbf7] w-[95%] m-auto text-center'>
+    <div className='font-poppins bg-[#fcfbf7] w-[95%] m-auto text-center sm:p-10'
+    style={{backgroundColor: isDark ? '#1b1c1e' : '#fcfbf7', color: isDark ? 'white' : 'black'}}
+
+    >
         <div className='mt-20 text-3xl flex flex-col items-center'>
             <div>WHY CHOOSE LENS</div>
             <div style={{
@@ -66,11 +73,11 @@ const Why = () => {
             AI-driven solutions backed by science
         </div>
 
-        <div className='mt-5 leading-relaxed text-gray-500 text-xl'>
+        <div className='w-[80%] xl:w-[60%] m-auto mt-5 leading-relaxed text-gray-500 text-xl'>
             Every piece of AI technology shipped from LENS is thoroughly benchmarked via rigorous evaluations. With a global network of experts and academicians, we guarantee the most accurate and robust solutions in the market.
         </div>
 
-        <div className='w-[80%] text-xl text-gray-500 m-auto grid grid-cols-1 sm:grid-cols-2 gap-10 mt-10'>
+        <div className='w-[80%] xl:w-[60%] text-xl text-gray-500 m-auto grid grid-cols-1 sm:grid-cols-2 gap-10 mt-10'>
             <div>
                 <ul>
                     {

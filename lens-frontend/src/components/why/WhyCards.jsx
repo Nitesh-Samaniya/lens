@@ -1,9 +1,11 @@
 "use client";
+import { ThemeContext } from '@/context/ThemeContext';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const WhyCards = ({color, title, image, text}) => {
     const [isHovered, setIsHovered] = useState(false);
+    const {isDark, changeTheme} = React.useContext(ThemeContext)
 
     function getLightColor(color) {
         switch (color) {
@@ -27,7 +29,7 @@ const WhyCards = ({color, title, image, text}) => {
   return (
     <div
         className='p-5 group shadow-xl rounded-3xl' 
-        style={{ border: `1px solid ${borderColor}`, backgroundColor}}
+        style={{ border: `1px solid ${borderColor}`, backgroundColor: isDark ? "#1b1c1e" : backgroundColor}}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
     >

@@ -1,11 +1,19 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import MeetCom from '../../../public/meetcom.webp';
 import './index.css';
+import { ThemeContext } from '@/context/ThemeContext';
 
 const Meet = () => {
+  const {isDark, changeTheme} = React.useContext(ThemeContext)
+
   return (
-    <div className='flex justify-between items-center bg-[#272e5c] mt-20 mb-20 pt-16 pb-16 meetBox' style={{clipPath: 'polygon(0 20%, 100% 0, 100% 100%, 0 100%)'}}>
+    <div className='flex justify-between items-center bg-[#272e5c] mt-20 mb-20 pt-16 pb-16 meetBox' 
+    style={{
+      clipPath: 'polygon(0 20%, 100% 0, 100% 100%, 0 100%)',
+      backgroundColor: isDark ? '#1b1c1e' : '#272e5c', color: isDark ? 'white' : 'black'
+    }}>
         <div className='ml-10'>
             <Image src={MeetCom} alt='compImg'/>
         </div>

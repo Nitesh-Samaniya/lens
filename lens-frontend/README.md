@@ -50,11 +50,14 @@ Start the server
 
 ## Screenshots
 
-![Interface](./frontend/screenshots/interface.png)
-![Interface](./frontend/screenshots/booking_form.png)
-![Interface](./frontend/screenshots/loading.png)
-![Interface](./frontend/screenshots/all_booking.png)
-![Interface](./frontend/screenshots/user_detail.png)
+![Interface](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-05-11/Screenshot%202024-05-11%20101939_408562.png)
+<br />
+<br />
+![Interface](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-05-11/Screenshot%202024-05-11%20102157_843947.png)
+<br />
+<br />
+![Interface](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-05-11/Screenshot%202024-05-11%20102409_366792.png)
+
 
 ## Authors
 

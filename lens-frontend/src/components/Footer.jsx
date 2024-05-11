@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Logo from "../../public/nav_logo.webp";
 import Image from 'next/image';
@@ -6,14 +7,20 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from 'next/link';
+import { ThemeContext } from '@/context/ThemeContext';
 
 
 const Footer = () => {
+    const {isDark, changeTheme} = React.useContext(ThemeContext)
+
   return (
       <div>
-          <div className='mt-20 w-[90%] m-auto flex justify-between text-center'>
+          <div className='mt-20 w-[90%] m-auto flex flex-col gap-10 sm:flex-row sm:justify-between text-center'>
+            {/* flex flex-col gap-10 sm:flex-row justify-between items-center */}
               <div>
-                  <Image src={Logo} alt='logo' className='inline-block sm:block'/>
+                    <div className='inline-block'>
+                        <Image src={Logo} alt='logo'/>
+                    </div>
                   <p className='mt-5'>Tomorrow's Vision, Today!</p>
                   <div className='w-[50%] sm:w-[100%] m-auto flex justify-between mt-10'>
                       <p><Link href='https://www.facebook.com/solutions.lenscorp?mibextid=2JQ9oc' target='_blank'><FaFacebook size={25} /></Link></p>
@@ -44,7 +51,10 @@ const Footer = () => {
               </div>
           </div>
 
-          <div className='mt-10 py-10 bg-[#272e5c]'>
+          <div className='mt-10 py-10 bg-[#272e5c]'
+            style={{backgroundColor: isDark ? '#1b1c1e' : '#272e5c', color: isDark ? 'white' : 'black'}}
+
+          >
             <div className='w-[95%] m-auto flex text-white justify-between text-center font-semibold sm:font-bold'>
                 <div>2023 LENS, Inc. All rights reserved.</div>
                 <div className='flex gap-5 sm:gap-10'>

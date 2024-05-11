@@ -1,9 +1,11 @@
 "use client"
+import { ThemeContext } from '@/context/ThemeContext';
 import React, { useState } from 'react'
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const BlogCard = ({date, title, text, color}) => {
     const [isHovered, setIsHovered] = useState(false);
+    const {isDark, changeTheme} = React.useContext(ThemeContext)
 
     function getLightColor(color) {
         switch (color) {
@@ -39,7 +41,7 @@ const BlogCard = ({date, title, text, color}) => {
   return (
     <div
         className='p-5 group shadow-xl'  
-        style={{backgroundColor}}
+        style={{backgroundColor: isDark ? "#1b1c1e" : backgroundColor}}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
     >

@@ -9,20 +9,15 @@ import KnowUs from "@/components/KnowUs";
 import Footer from "@/components/Footer";
 import Blogs from "@/components/blogs/Blogs";
 import Clients from "@/components/Clients";
+import ThemeContextProvider from "@/context/ThemeContext";
+import HomePage from "./HomePage";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <About />
-      <Service />
-      <Meet />
-      <Why />
-      <Blogs />
-      <Clients />
-      <KnowUs />
-      <Footer />
+      <ThemeContextProvider>
+        <HomePage />
+      </ThemeContextProvider>
     </>
   );
 }

@@ -1,10 +1,17 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import Map from "../../public/map.webp";
+import { ThemeContext } from '@/context/ThemeContext';
 
 const KnowUs = () => {
+  const {isDark, changeTheme} = React.useContext(ThemeContext)
+
   return (
-      <div>
+      <div 
+        className='p-5 mt-5'
+        style={{backgroundColor: isDark ? '#1b1c1e' : 'white', color: isDark ? 'white' : 'black'}}
+      >
           <div className='mt-20 text-3xl flex flex-col items-center'>
               <div>GET TO KNOW US</div>
               <div style={{
@@ -16,7 +23,9 @@ const KnowUs = () => {
               </div>
           </div>
 
-          <div className='mt-20 w-[90%] m-auto flex flex-col gap-16 lg:flex-row justify-between items-center'>
+          <div className='mt-20 w-[90%] m-auto flex flex-col gap-16 lg:flex-row justify-between items-center p-5'
+
+          >
             <div className='lg:w-[40%]'>
                 <p className='text-4xl lg:text-5xl xl:text-7xl'>Get in touch with us</p>
                 <p className='text-xl mt-4 text-gray-500'>Send your enquiry now!</p>
