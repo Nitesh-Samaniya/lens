@@ -4,7 +4,7 @@ import HeaderBgImg from '../../public/header.webp';
 
 const Header = () => {
   return (
-      <div className='relative font-sans-serif w-full h-auto'>
+      <div className='relative font-sans-serif w-full h-auto mt-24'>
           <Image src={HeaderBgImg} alt="Header Background" style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
           <div className="absolute left-[20%] top-[20%] md:w-1/2 lg:w-1/2 xl:w-1/3 ">
               <p className="text-black sm:text-6xl text-4xl leading-tight font-medium">We are at the forefront of AI</p>
