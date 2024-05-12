@@ -8,7 +8,7 @@ LENS provide state-of-the-art AI solutions developed in-house with the help of p
 
 ## Video Demo
 
-[Video Demo](https://drive.google.com/file/d/1dbKJUEF1ghB1LYQW6Oa2CknoqklIA4VI/view)
+[Video Demo](https://drive.google.com/file/d/160jXOM8g1XwQ6w68tHaZ-3VlqpNoIx6r/view)
 
 ## Tech Stack
 
