@@ -3,6 +3,7 @@
 import { ThemeContext } from "@/context/ThemeContext";
 import React from "react";
 import Stepper from "./Stepper";
+import VisionBox from "./VisionBox";
 
 const steps = [
     {
@@ -45,7 +46,8 @@ export default function Vision() {
                   Explainable AI (XAI) is an emerging subject of machine learning research that refers to strategies that try to provide transparency to typically opaque AI models and their predictions.
               </div>
 
-              <Stepper steps={steps} />
+            <div className="hidden lg:block"><VisionBox /></div>
+            <div className="lg:hidden"><Stepper steps={steps} /></div>
 
           </div>
       </div>
